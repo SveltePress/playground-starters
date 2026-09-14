@@ -32,9 +32,9 @@ Each Starter is an independent project root:
 | `custom-theme` | Custom theme starter |
 | `kitchen-sink` | Kitchen-sink starter |
 
-Each subdirectory will have its own `package.json` and lockfile. Dependencies pin **published** `@sveltepress/*` packages. Do not use `workspace:*` or `catalog:`.
+Each subdirectory is an independent project root with its own `package.json` and lockfile. Dependencies pin **published** `@sveltepress/*` packages. Do not use `workspace:*` or `catalog:`.
 
-Starter trees are not in this repository yet. Playground v1 may author only `default-theme` in a later ticket and still pin a tag.
+Playground v1 authors only `default-theme` (JavaScript, seeded from `create-sveltepress` `template-js` plus the Basic Writing page). The other six directories are not present yet. sveltepress.site still embeds a git tag rather than `main`; a tag may freeze only `default-theme`.
 
 ## Contributing
 

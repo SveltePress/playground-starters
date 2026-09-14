@@ -37,9 +37,10 @@ Each subdirectory is an independent project root with its own `package.json` and
 Authored so far:
 
 - `default-theme` — JavaScript, seeded from `create-sveltepress` `template-js` plus the Basic Writing page.
+- `typescript` — TypeScript, seeded from `create-sveltepress` `template-ts`. Focused file is `vite.config.ts`.
 - `versions` — Default Theme project with `@sveltepress/cli`, a versions manifest, and one frozen snapshot.
 
-The remaining directories (`typescript`, `blog`, `i18n`, `custom-theme`, `kitchen-sink`) are not present yet. sveltepress.site still embeds a git tag rather than `main`.
+The remaining directories (`blog`, `i18n`, `custom-theme`, `kitchen-sink`) are not present yet. sveltepress.site still embeds a git tag rather than `main`.
 
 ## Contributing
 

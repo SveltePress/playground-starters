@@ -1,0 +1,47 @@
+{
+  "$schema": "./node_modules/@sveltepress/cli/schema/versions.schema.json",
+  "basePath": "/v",
+  "current": {
+    "id": "1.1",
+    "label": "1.1"
+  },
+  "versions": [
+    {
+      "id": "1.0",
+      "label": "1.0",
+      "routes": [
+        "/",
+        "/guide/default-theme/admonitions/",
+        "/guide/default-theme/builtin-components/",
+        "/guide/default-theme/code-related/",
+        "/guide/default-theme/frontmatter/",
+        "/guide/default-theme/google-analytics/",
+        "/guide/default-theme/headings-and-anchors/",
+        "/guide/default-theme/home-page/",
+        "/guide/default-theme/navbar/",
+        "/guide/default-theme/pwa/",
+        "/guide/default-theme/search/",
+        "/guide/default-theme/sidebar/",
+        "/guide/default-theme/twoslash/",
+        "/guide/default-theme/unocss/",
+        "/guide/i18n/",
+        "/guide/markdown/basic-writing/",
+        "/guide/markdown/frontmatter/",
+        "/guide/markdown/svelte-in-markdown/",
+        "/guide/version-management/",
+        "/reference/virtual-modules/",
+        "/reference/vite-plugin/"
+      ],
+      "status": "stable"
+    }
+  ],
+  "content": {
+    "include": [
+      "**"
+    ],
+    "exclude": [],
+    "shared": [
+      "src/lib/hello.ts"
+    ]
+  }
+}

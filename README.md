@@ -40,8 +40,9 @@ Authored so far:
 - `typescript` — TypeScript, seeded from `create-sveltepress` `template-ts`. Focused file is `vite.config.ts`.
 - `versions` — Default Theme project with `@sveltepress/cli`, a versions manifest, and one frozen snapshot.
 - `i18n` — two-locale Default Theme project (English + Chinese), a subset of Kitchen-sink, focused at `config/locales.ts`.
+- `blog` — TypeScript Blog theme project matching the hosted Blog demo's shape (not `example-blog` in place). OG image generation is off so WebContainer boot stays clean. Focused files are `vite.config.ts`, `src/posts/hello-sveltepress.md`, `src/posts/editorial-showcase.md`, and `src/app.css`.
 
-The remaining directories (`blog`, `custom-theme`, `kitchen-sink`) are not present yet. sveltepress.site still embeds a git tag rather than `main`. After `@sveltepress/*` npm publish, bump authored trees in a chore on this repo, not the monorepo Changeset PR.
+The remaining directories (`custom-theme`, `kitchen-sink`) are not present yet. sveltepress.site still embeds a git tag rather than `main`. After `@sveltepress/*` npm publish, bump authored trees in a chore on this repo, not the monorepo Changeset PR.
 
 ## Contributing
 

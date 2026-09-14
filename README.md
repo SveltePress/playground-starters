@@ -34,7 +34,12 @@ Each Starter is an independent project root:
 
 Each subdirectory is an independent project root with its own `package.json` and lockfile. Dependencies pin **published** `@sveltepress/*` packages. Do not use `workspace:*` or `catalog:`.
 
-Playground v1 authors only `default-theme` (JavaScript, seeded from `create-sveltepress` `template-js` plus the Basic Writing page). The other six directories are not present yet. sveltepress.site still embeds a git tag rather than `main`; a tag may freeze only `default-theme`.
+Authored so far:
+
+- `default-theme` — JavaScript, seeded from `create-sveltepress` `template-js` plus the Basic Writing page.
+- `versions` — Default Theme project with `@sveltepress/cli`, a versions manifest, and one frozen snapshot.
+
+The remaining directories (`typescript`, `blog`, `i18n`, `custom-theme`, `kitchen-sink`) are not present yet. sveltepress.site still embeds a git tag rather than `main`.
 
 ## Contributing
 

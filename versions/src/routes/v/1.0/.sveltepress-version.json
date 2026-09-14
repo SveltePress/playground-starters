@@ -1,0 +1,22 @@
+{
+  "id": "1.0",
+  "routes": [
+    "/",
+    "/guide/version-management/"
+  ],
+  "sidebar": {
+    "/guide/version-management/": [
+      {
+        "title": "Document versions",
+        "to": "/guide/version-management/"
+      }
+    ]
+  },
+  "sharedDependencies": [],
+  "changes": {
+    "versionId": "1.0",
+    "baselineVersionId": null,
+    "newPages": [],
+    "updatedPages": []
+  }
+}

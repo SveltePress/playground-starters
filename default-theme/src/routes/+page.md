@@ -1,12 +1,13 @@
 ---
 title: Welcome to Sveltepress
 heroImage: /sveltepress@3x.png
-tagline: A simple, easy to use content centered site build tool with the full power of Sveltekit.
+tagline: Default Theme starter — Markdown, Default Theme, and Vite plugin Entries share this tree.
 actions:
-  - label: View on github
+  - label: Basic Writing
     type: primary
-    to: https://github.com/SveltePress/sveltepress
-    external: true
+    to: /guide/markdown/basic-writing/
+  - label: Navbar
+    to: /guide/default-theme/navbar/
 features:
   - title: Markdown centered
     description: To help you can start writing with minimal configuration

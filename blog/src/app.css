@@ -1,0 +1,6 @@
+/* Customisation Entry focused file.
+ * Override theme tokens here. Values apply on top of theme-blog defaults.
+ */
+:root {
+  --sp-blog-primary: #fb923c;
+}

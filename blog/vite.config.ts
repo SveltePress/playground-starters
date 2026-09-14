@@ -1,0 +1,63 @@
+import { blogTheme } from '@sveltepress/theme-blog'
+import { sveltepress } from '@sveltepress/vite'
+import { defineConfig } from 'vite'
+
+const config = defineConfig({
+  plugins: [
+    sveltepress({
+      theme: blogTheme({
+        title: 'SveltePress Blog',
+        description: 'A Blog starter powered by @sveltepress/theme-blog',
+        base: process.env.SITE_URL ?? 'http://localhost:5173',
+        author: {
+          name: 'Demo Author',
+          avatar: '/avatar.png',
+          bio: 'Writes about Svelte, CSS, and keeping the web fast.',
+          socials: {
+            github: 'sveltepress',
+            twitter: 'sveltejs',
+            email: 'demo@example.com',
+            rss: '/rss.xml',
+          },
+        },
+        about: {
+          html: '<p>Short note: this Starter is the Playground Blog tree, not the hosted Blog demo.</p>',
+        },
+        navbar: [
+          { title: 'Home', to: '/' },
+          { title: 'Timeline', to: '/timeline/' },
+          { title: 'Tags', to: '/tags/' },
+        ],
+        rss: {
+          enabled: true,
+          limit: 20,
+          copyright: `© ${new Date().getFullYear()} SveltePress Blog`,
+        },
+        // Degraded packaging: skip Satori/resvg OG PNG generation so WebContainer boot stays clean.
+        ogImage: {
+          enabled: false,
+        },
+        // Uncomment and fill with real values from https://giscus.app to enable comments.
+        // giscus: {
+        //   repo: 'you/your-repo',
+        //   repoId: 'R_xxxxxxxx',
+        //   category: 'Announcements',
+        //   categoryId: 'DIC_xxxxxxxx',
+        //   mapping: 'pathname',
+        // },
+      }),
+      siteConfig: {
+        title: 'SveltePress Blog',
+        description: 'A Blog starter powered by @sveltepress/theme-blog',
+      },
+    }),
+  ],
+  ssr: {
+    // Fontsource CSS packages imported from theme-blog's GlobalLayout must be
+    // bundled (not externalised) so Node's ESM loader doesn't try to load raw
+    // `.css` files during SSR.
+    noExternal: ['@fontsource-variable/fraunces', '@fontsource/inter'],
+  },
+})
+
+export default config

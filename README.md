@@ -39,8 +39,9 @@ Authored so far:
 - `default-theme` — JavaScript, seeded from `create-sveltepress` `template-js`, then grown with extracted `config/navbar.js` / `config/sidebar.js` and Guide-matching routes for every Markdown, Default Theme, and Vite plugin Entry.
 - `typescript` — TypeScript, seeded from `create-sveltepress` `template-ts`. Focused file is `vite.config.ts`.
 - `versions` — Default Theme project with `@sveltepress/cli`, a versions manifest, and one frozen snapshot.
+- `i18n` — two-locale Default Theme project (English + Chinese), a subset of Kitchen-sink, focused at `config/locales.ts`.
 
-The remaining directories (`blog`, `i18n`, `custom-theme`, `kitchen-sink`) are not present yet. sveltepress.site still embeds a git tag rather than `main`. After `@sveltepress/*` npm publish, bump authored trees in a chore on this repo, not the monorepo Changeset PR.
+The remaining directories (`blog`, `custom-theme`, `kitchen-sink`) are not present yet. sveltepress.site still embeds a git tag rather than `main`. After `@sveltepress/*` npm publish, bump authored trees in a chore on this repo, not the monorepo Changeset PR.
 
 ## Contributing
 

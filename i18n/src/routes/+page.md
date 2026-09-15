@@ -1,7 +1,7 @@
 ---
 title: Welcome to Sveltepress
 heroImage: /sveltepress@3x.png
-tagline: A two-locale Default Theme starter. Use the language switcher to open the Chinese tree.
+tagline: A three-locale Default Theme starter. Use the language switcher to open the Chinese or Bengali tree.
 actions:
   - label: Internationalization
     type: primary
@@ -10,8 +10,8 @@ actions:
     to: https://github.com/SveltePress/sveltepress
     external: true
 features:
-  - title: Two locales
-    description: English stays at / and Chinese lives under /zh/.
+  - title: Three locales
+    description: English stays at /, Chinese lives under /zh/, and Bengali under /bn/.
   - title: Language switcher
     description: Default Theme chrome follows sveltepress({ locales }).
   - title: Focused file

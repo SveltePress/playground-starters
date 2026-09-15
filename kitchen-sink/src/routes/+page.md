@@ -11,8 +11,8 @@ actions:
 features:
   - title: Coexistable Default Theme set
     description: Markdown, Default Theme chrome, i18n, versions, Vite plugin options, and virtual modules in one TypeScript project.
-  - title: Two locales
-    description: English stays at / and Chinese lives under /zh/.
+  - title: Three locales
+    description: English stays at /, Chinese under /zh/, and Bengali under /bn/.
   - title: One frozen snapshot
     description: Operate versions init / create. versions build is Degraded in WebContainers.
 ---

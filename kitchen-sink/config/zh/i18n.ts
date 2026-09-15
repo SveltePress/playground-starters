@@ -4,4 +4,7 @@ export default {
 	onThisPage: '当前页面',
 	previousPage: '上一页',
 	nextPage: '下一页',
+	footnoteLabel: '脚注',
+	searchPlaceholder: '搜索文档...',
+	searchDevNotice: '本地搜索索引在生产构建后生成，开发模式下不可用。',
 }

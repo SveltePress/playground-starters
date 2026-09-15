@@ -70,7 +70,7 @@ This page writes Svelte in markdown and inspects the modules with the same `Json
 </style>
 
 - `virtual:sveltepress/site` — `siteConfig.title` / `description`
-- `virtual:sveltepress/locale` — two-locale map (`/` English, `/zh/` Chinese)
+- `virtual:sveltepress/locale` — three-locale map (`/` English, `/zh/` Chinese, `/bn/` Bengali)
 - `virtual:sveltepress/versions` — `sveltepress.versions.json` plus the frozen `1.0` snapshot
 
 Open in Playground on `/reference/site/`, `/reference/locale/`, and `/reference/versions/` lands here.

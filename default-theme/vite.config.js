@@ -1,15 +1,12 @@
 import { defaultTheme } from '@sveltepress/theme-default'
 import { sveltepress } from '@sveltepress/vite'
 import { defineConfig } from 'vite'
-import navbar from './config/navbar.js'
-import sidebar from './config/sidebar.js'
+import { locales } from './config/locales.js'
 
 const config = defineConfig({
 	plugins: [
 		sveltepress({
 			theme: defaultTheme({
-				navbar,
-				sidebar,
 				github: 'https://github.com/SveltePress/playground-starters',
 				logo: '/sveltepress.svg',
 				ga: 'G-XXXXXXXXX',
@@ -26,6 +23,7 @@ const config = defineConfig({
 				// docsearch: { appId: 'YOUR_APP_ID', apiKey: 'YOUR_SEARCH_API_KEY', indexName: 'YOUR_INDEX_NAME' },
 				// search: '/src/lib/MeilisearchSearch.svelte',
 			}),
+			locales,
 			siteConfig: {
 				title: 'Sveltepress',
 				description: 'A content centered site build tool',

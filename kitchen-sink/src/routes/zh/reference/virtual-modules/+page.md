@@ -27,6 +27,7 @@ title: 虚拟模块
     <JsonViewer data="{versions}" />
   </section>
 </div>
+
 <style>
   .stack {
     display: grid;
@@ -69,6 +70,7 @@ title: 虚拟模块
   }
 </style>
 
+
 - `virtual:sveltepress/site` — 站点标题与描述
-- `virtual:sveltepress/locale` — 双语言映射（`/` 英文，`/zh/` 中文）
+- `virtual:sveltepress/locale` — 三语言映射（`/` 英文，`/zh/` 中文，`/bn/` 孟加拉语）
 - `virtual:sveltepress/versions` — 版本清单与冻结快照

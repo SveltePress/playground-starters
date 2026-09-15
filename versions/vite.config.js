@@ -11,14 +11,14 @@ const config = defineConfig({
 						title: 'Document versions',
 						to: '/guide/version-management/',
 					},
+					{
+						title: 'What\'s new',
+						to: '/whats-new/',
+					},
 				],
 				sidebar: {
-					'/guide/version-management/': [
-						{
-							title: 'Document versions',
-							to: '/guide/version-management/',
-						},
-					],
+					enabled: true,
+					roots: ['/guide/'],
 				},
 				github: 'https://github.com/SveltePress/sveltepress',
 				logo: '/sveltepress.svg',

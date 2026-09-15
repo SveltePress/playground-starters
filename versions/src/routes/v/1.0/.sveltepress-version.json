@@ -5,7 +5,7 @@
     "/guide/version-management/"
   ],
   "sidebar": {
-    "/guide/version-management/": [
+    "/guide/": [
       {
         "title": "Document versions",
         "to": "/guide/version-management/"

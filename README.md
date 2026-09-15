@@ -38,7 +38,7 @@ Authored so far:
 
 - `default-theme` — JavaScript, seeded from `create-sveltepress` `template-js`, then grown with extracted `config/navbar.js` / `config/sidebar.js` and Guide-matching routes for every Markdown, Default Theme, and Vite plugin Entry.
 - `typescript` — TypeScript, seeded from `create-sveltepress` `template-ts`. Focused file is `vite.config.ts`.
-- `versions` — Default Theme project with `@sveltepress/cli`, a versions manifest, and one frozen snapshot.
+- `versions` — Default Theme project with `@sveltepress/cli`, a versions manifest, one frozen snapshot, auto sidebar, `/whats-new/`, and New badges on the current 1.1 pages.
 - `i18n` — two-locale Default Theme project (English + Chinese), a subset of Kitchen-sink, focused at `config/locales.ts`.
 - `blog` — TypeScript Blog theme project matching the hosted Blog demo's shape (not `example-blog` in place). OG image generation is off so WebContainer boot stays clean. `@resvg/resvg-js` is overridden to `vendor/resvg-js-stub` because `@sveltepress/theme-blog@1.0.3` statically imports the native addon. Focused files are `vite.config.ts`, `src/posts/hello-sveltepress.md`, `src/posts/editorial-showcase.md`, and `src/app.css`.
 - `custom-theme` — newly authored Custom theme starter: no Default Theme, no Blog theme, layout authored in the project. Focused file is `src/routes/+layout.svelte`.

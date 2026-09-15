@@ -1,0 +1,12 @@
+{
+  "name": "@resvg/resvg-js",
+  "version": "2.6.2",
+  "description": "JS stub used by the Playground Blog starter. WebContainers cannot dlopen the real native addon.",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./js-binding.js": "./js-binding.js"
+  }
+}

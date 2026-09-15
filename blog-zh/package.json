@@ -1,0 +1,33 @@
+{
+  "name": "sveltepress-blog-starter-zh",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.34.5",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build && pagefind --site dist",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/kit": "^2.70.3",
+    "@sveltejs/vite-plugin-svelte": "^7.3.0",
+    "@sveltepress/theme-blog": "^1.0.3",
+    "@sveltepress/vite": "^1.8.3",
+    "@types/node": "^24.13.4",
+    "pagefind": "^1.5.2",
+    "svelte": "^5.57.0",
+    "svelte-check": "^4.7.6",
+    "vite": "^8.3.0"
+  },
+  "overrides": {
+    "@resvg/resvg-js": "file:./vendor/resvg-js-stub"
+  },
+  "pnpm": {
+    "overrides": {
+      "@resvg/resvg-js": "file:./vendor/resvg-js-stub"
+    }
+  }
+}

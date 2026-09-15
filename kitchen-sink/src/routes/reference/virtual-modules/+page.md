@@ -2,7 +2,7 @@
 title: Virtual modules
 ---
 
-This page is the Focused file for the Virtual modules Entry. All three modules are populated in this Kitchen-sink starter because the tree has `siteConfig`, `locales`, and a versions manifest.
+This page is the Focused file for the Virtual modules Entry. `virtual:sveltepress/site` and `versions` are populated here. `locale` is the single-locale default — the three-locale demo is the Internationalization Entry.
 
 This page writes Svelte in markdown and inspects the modules with the same `JsonViewer` used on the docs site `virtual:sveltepress/site`, `locale`, and `versions` pages.
 

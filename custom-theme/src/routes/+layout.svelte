@@ -15,8 +15,6 @@
 	<a class="brand" href="/">Custom theme starter</a>
 	<nav aria-label="Main">
 		<a href="/">Home</a>
-		<a href="/zh/">中文</a>
-		<a href="/bn/">বাংলা</a>
 	</nav>
 </header>
 

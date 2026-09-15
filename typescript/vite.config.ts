@@ -1,16 +1,18 @@
 import { defaultTheme } from '@sveltepress/theme-default'
 import { sveltepress } from '@sveltepress/vite'
 import { defineConfig } from 'vite'
-import { locales } from './config/locales'
+import navbar from './config/navbar'
+import sidebar from './config/sidebar'
 
 const config = defineConfig({
 	plugins: [
 		sveltepress({
 			theme: defaultTheme({
+				navbar,
+				sidebar,
 				github: 'https://github.com/SveltePress/sveltepress',
 				logo: '/sveltepress.svg',
 			}),
-			locales,
 			siteConfig: {
 				title: 'Sveltepress',
 				description: 'A content centered site build tool',

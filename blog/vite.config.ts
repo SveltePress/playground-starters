@@ -34,6 +34,9 @@ const config = defineConfig({
           copyright: `© ${new Date().getFullYear()} SveltePress Blog`,
         },
         // Degraded packaging: skip Satori/resvg OG PNG generation so WebContainer boot stays clean.
+        // theme-blog@1.0.3 still statically imports @resvg/resvg-js; package.json
+        // overrides that package with vendor/resvg-js-stub so WebContainer boot
+        // does not dlopen a native addon.
         ogImage: {
           enabled: false,
         },

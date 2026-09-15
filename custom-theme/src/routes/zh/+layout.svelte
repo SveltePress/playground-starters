@@ -1,7 +1,7 @@
 <script>
 	/**
-	 * The Hosted editor opens this file. Edit the header below — this is the
-	 * project-authored layout, not Default Theme or Blog theme chrome.
+	 * 中文演练场打开这个文件。编辑下面的页头 — 这是项目自己写的布局，
+	 * 不是默认主题，也不是博客主题。
 	 *
 	 * @typedef {object} Props
 	 * @property {import('svelte').Snippet} [children]
@@ -12,10 +12,10 @@
 </script>
 
 <header class="site-header">
-	<a class="brand" href="/">Custom theme starter</a>
-	<nav aria-label="Main">
-		<a href="/">Home</a>
-		<a href="/zh/">中文</a>
+	<a class="brand" href="/zh/">自定义主题 Starter</a>
+	<nav aria-label="主导航">
+		<a href="/zh/">首页</a>
+		<a href="/">English</a>
 		<a href="/bn/">বাংলা</a>
 	</nav>
 </header>

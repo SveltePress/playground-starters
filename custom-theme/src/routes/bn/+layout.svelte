@@ -1,7 +1,7 @@
 <script>
 	/**
-	 * The Hosted editor opens this file. Edit the header below — this is the
-	 * project-authored layout, not Default Theme or Blog theme chrome.
+	 * বাংলা প্লেগ্রাউন্ড এই ফাইল খোলে। নিচের হেডার সম্পাদনা করুন — এটি প্রকল্পে
+	 * লেখা লেআউট, Default Theme বা Blog theme নয়।
 	 *
 	 * @typedef {object} Props
 	 * @property {import('svelte').Snippet} [children]
@@ -12,11 +12,11 @@
 </script>
 
 <header class="site-header">
-	<a class="brand" href="/">Custom theme starter</a>
-	<nav aria-label="Main">
-		<a href="/">Home</a>
+	<a class="brand" href="/bn/">কাস্টম থিম Starter</a>
+	<nav aria-label="প্রধান নেভিগেশন">
+		<a href="/bn/">হোম</a>
+		<a href="/">English</a>
 		<a href="/zh/">中文</a>
-		<a href="/bn/">বাংলা</a>
 	</nav>
 </header>
 

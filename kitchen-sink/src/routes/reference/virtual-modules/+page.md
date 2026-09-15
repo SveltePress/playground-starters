@@ -4,9 +4,8 @@ title: Virtual modules
 
 This page is the Focused file for the Virtual modules Entry. All three modules are populated in this Kitchen-sink starter because the tree has `siteConfig`, `locales`, and a versions manifest.
 
-Inspect them with the same live `JsonViewer` used on the docs site `virtual:sveltepress/site`, `locale`, and `versions` pages.
+This page writes Svelte in markdown and inspects the modules with the same `JsonViewer` used on the docs site `virtual:sveltepress/site`, `locale`, and `versions` pages.
 
-```svelte live
 <script>
   import { JsonViewer } from 'svelte-json-discovery'
   import site from 'virtual:sveltepress/site'
@@ -17,15 +16,15 @@ Inspect them with the same live `JsonViewer` used on the docs site `virtual:svel
 <div class="stack">
   <section class="viewer">
     <p class="label">virtual:sveltepress/site</p>
-    <JsonViewer data={site} />
+    <JsonViewer data="{site}" />
   </section>
   <section class="viewer">
     <p class="label">virtual:sveltepress/locale</p>
-    <JsonViewer data={locales} />
+    <JsonViewer data="{locales}" />
   </section>
   <section class="viewer">
     <p class="label">virtual:sveltepress/versions</p>
-    <JsonViewer data={versions} />
+    <JsonViewer data="{versions}" />
   </section>
 </div>
 <style>
@@ -69,7 +68,6 @@ Inspect them with the same live `JsonViewer` used on the docs site `virtual:svel
     color-scheme: dark;
   }
 </style>
-```
 
 - `virtual:sveltepress/site` — `siteConfig.title` / `description`
 - `virtual:sveltepress/locale` — two-locale map (`/` English, `/zh/` Chinese)

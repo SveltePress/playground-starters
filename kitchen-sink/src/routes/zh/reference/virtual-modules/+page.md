@@ -4,9 +4,8 @@ title: 虚拟模块
 
 这是虚拟模块条目的聚焦文件。Kitchen-sink Starter 同时填充了 `virtual:sveltepress/site`、`locale` 与 `versions`。
 
-用文档站点相同的实时 `JsonViewer` 查看这三项数据。
+本页直接在 Markdown 中写 Svelte，用文档站点相同的 `JsonViewer` 查看这三项数据。
 
-```svelte live
 <script>
   import { JsonViewer } from 'svelte-json-discovery'
   import site from 'virtual:sveltepress/site'
@@ -17,15 +16,15 @@ title: 虚拟模块
 <div class="stack">
   <section class="viewer">
     <p class="label">virtual:sveltepress/site</p>
-    <JsonViewer data={site} />
+    <JsonViewer data="{site}" />
   </section>
   <section class="viewer">
     <p class="label">virtual:sveltepress/locale</p>
-    <JsonViewer data={locales} />
+    <JsonViewer data="{locales}" />
   </section>
   <section class="viewer">
     <p class="label">virtual:sveltepress/versions</p>
-    <JsonViewer data={versions} />
+    <JsonViewer data="{versions}" />
   </section>
 </div>
 <style>
@@ -69,7 +68,6 @@ title: 虚拟模块
     color-scheme: dark;
   }
 </style>
-```
 
 - `virtual:sveltepress/site` — 站点标题与描述
 - `virtual:sveltepress/locale` — 双语言映射（`/` 英文，`/zh/` 中文）

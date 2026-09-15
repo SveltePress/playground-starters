@@ -11,14 +11,20 @@
 	const { children } = $props()
 </script>
 
-<header class="site-header">
-	<a class="brand" href="/">Custom theme starter</a>
-	<nav aria-label="Main">
-		<a href="/">Home</a>
-	</nav>
-</header>
-
-{@render children?.()}
+<div class="sp-layer sp-layer-root">
+	<p class="sp-layer-label">
+		<span class="sp-layer-code">src/routes/+layout.svelte</span>
+		<span class="sp-layer-badge">Root layout</span>
+	</p>
+	<header class="site-header">
+		<a class="brand" href="/">Custom theme starter</a>
+		<nav aria-label="Main">
+			<a href="/">Home</a>
+			<a href="/foo">Nested section</a>
+		</nav>
+	</header>
+	{@render children?.()}
+</div>
 
 <style>
 	.site-header {
@@ -27,7 +33,8 @@
 		align-items: baseline;
 		justify-content: space-between;
 		gap: 1rem;
-		padding: 1.25rem 0 1rem;
+		margin-bottom: 0.75rem;
+		padding-bottom: 0.75rem;
 		border-bottom: 1px solid #d6d3d1;
 	}
 	.brand {
@@ -38,8 +45,5 @@
 	nav {
 		display: flex;
 		gap: 1rem;
-	}
-	nav a {
-		color: #0f766e;
 	}
 </style>
